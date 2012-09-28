@@ -1,15 +1,6 @@
+### PERMISSIONS ###
 
-# Included by instructor
-
-if [ -e /share/b/bin/instructional.bashrc ]
-then
-     source /share/b/bin/instructional.bashrc
-fi
-
-### STARTUP DIRECTORY ###
-
-cd /work/cs250-ai
-
+umask 0022
 
 ### ALIASES ###
 
@@ -23,3 +14,8 @@ alias getnx="echo \"export DISPLAY=$DISPLAY\" > ~/.nxdisplay"
 alias setnx="source ~/.nxdisplay"
 
 alias grep="grep --color"
+
+### PATHS ###
+
+# These should generally go in .bash_profile.
+
