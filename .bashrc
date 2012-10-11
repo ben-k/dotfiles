@@ -20,7 +20,6 @@ alias infinity="ssh bkeller@192.168.1.4"
 alias bwrc="ssh bkeller@bwrcrdsl-3.eecs.berkeley.edu"
 alias mil="ssh bkeller@s141.millennium.berkeley.edu"
 
-### PATHS ###
+### PS1 (Config for terminal prompt) ###
 
-# These should generally go in .bash_profile.
-
+PS1='\[\033[0;32m\]\u@\h \[\033[33m\]\w\[\033[0m\] '
