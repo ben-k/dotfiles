@@ -1,6 +1,6 @@
 " A tab is 2 spaces
 set tabstop=2
-set number
+"set number
 set smarttab
 set shiftwidth=2
 set expandtab
