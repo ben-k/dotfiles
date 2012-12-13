@@ -5,6 +5,7 @@ umask 0022
 ### ALIASES ###
 
 alias ls="ls -hAF"
+alias ll="ls -l"
 alias ..="cd ../"
 alias home="cd ~"
 alias ...="cd ../.."
