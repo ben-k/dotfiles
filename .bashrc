@@ -30,6 +30,7 @@ alias rc2="ssh bkeller@bwrcr720-2.eecs.berkeley.edu"
 alias rc3="ssh bkeller@bwrcr720-3.eecs.berkeley.edu"
 alias rdsl4="ssh bkeller@bwrcrdsl-4.eecs.berkeley.edu"
 
+alias home="cd /tools/designs/Dcdg/users/bkeller"
 
 ### PS1 (Config for terminal prompt) ###
 
