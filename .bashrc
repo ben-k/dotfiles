@@ -6,6 +6,7 @@ umask 0022
 
 alias ls="ls -hAF"
 alias ll="ls -l"
+alias lt="ll -t"
 alias ..="cd ../"
 alias home="cd ~"
 alias ...="cd ../.."
