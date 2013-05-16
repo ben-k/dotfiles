@@ -29,7 +29,12 @@ alias milx="ssh -X bkeller@s141.millennium.berkeley.edu"
 alias rc1="ssh bkeller@bwrcr720-1.eecs.berkeley.edu"
 alias rc2="ssh bkeller@bwrcr720-2.eecs.berkeley.edu"
 alias rc3="ssh bkeller@bwrcr720-3.eecs.berkeley.edu"
+alias rc4="ssh bkeller@bwrcr720-4.eecs.berkeley.edu"
+alias rc5="ssh bkeller@bwrcr720-5.eecs.berkeley.edu"
+alias rc6="ssh bkeller@bwrcr720-6.eecs.berkeley.edu"
 alias rdsl4="ssh bkeller@bwrcrdsl-4.eecs.berkeley.edu"
+
+alias dev="ssh bkeller@bwrcdev-01.eecs.berkeley.edu"
 
 alias home="cd /tools/designs/Dcdg/users/bkeller"
 
