@@ -43,3 +43,9 @@ alias home="cd /tools/designs/Dcdg/users/bkeller"
 ### PS1 (Config for terminal prompt) ###
 
 PS1='\[\033[0;32m\]\u@\h \[\033[33m\]\w\[\033[0m\] '
+
+### New screens only call .bashrc, so here's a fix:
+
+if [ $STY ]; then
+  source ~/.bash_profile
+fi
