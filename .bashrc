@@ -36,6 +36,13 @@ alias rc5="ssh bkeller@bwrcr720-5.eecs.berkeley.edu"
 alias rc6="ssh bkeller@bwrcr720-6.eecs.berkeley.edu"
 alias rdsl4="ssh bkeller@bwrcrdsl-4.eecs.berkeley.edu"
 
+alias ic12="ssh cs250-ta@icluster12.eecs.berkeley.edu"
+alias ic13="ssh cs250-ta@icluster13.eecs.berkeley.edu"
+alias ic14="ssh cs250-ta@icluster14.eecs.berkeley.edu"
+alias ic15="ssh cs250-ta@icluster15.eecs.berkeley.edu"
+alias ic16="ssh cs250-ta@icluster16.eecs.berkeley.edu"
+alias ic16s="ssh cs250-ab@icluster16.eecs.berkeley.edu"
+
 alias dev="ssh bkeller@bwrcdev-01.eecs.berkeley.edu"
 
 alias home="cd /tools/designs/Dcdg/users/bkeller"
