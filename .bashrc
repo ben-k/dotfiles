@@ -4,7 +4,10 @@ umask 0022
 
 ### ALIASES ###
 
-alias ls="ls -hAF --color=auto"
+export CLICOLOR=1
+export LSCOLORS=Exfxcxdxbxegedabagacad
+
+alias ls="ls -hAFG"
 alias ll="ls -l"
 alias lt="ll -rt"
 alias ..="cd ../"
@@ -46,6 +49,17 @@ alias rc5="ssh bkeller@bwrcr720-5.eecs.berkeley.edu"
 alias rc6="ssh bkeller@bwrcr720-6.eecs.berkeley.edu"
 
 alias 250="ssh cs250@icluster16.eecs.berkeley.edu"
+
+alias h9="ssh ee290c-ax@hpse-9.eecs.berkeley.edu"
+alias h10="ssh ee290c-ax@hpse-10.eecs.berkeley.edu"
+alias h11="ssh ee290c-ax@hpse-11.eecs.berkeley.edu"
+alias h12="ssh ee290c-ax@hpse-12.eecs.berkeley.edu"
+alias h13="ssh ee290c-ax@hpse-13.eecs.berkeley.edu"
+alias h14="ssh ee290c-ax@hpse-14.eecs.berkeley.edu"
+alias h15="ssh ee290c-ax@hpse-15.eecs.berkeley.edu"
+alias h16="ssh ee290c-ax@hpse-16.eecs.berkeley.edu"
+
+alias nv="ssh benk@sc-xterm-25"
 
 alias home="cd /tools/designs/Dcdg/users/bkeller"
 
