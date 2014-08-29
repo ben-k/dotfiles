@@ -4,14 +4,19 @@ umask 0022
 
 ### ALIASES ###
 
-alias ls="ls -hAFG"
+alias ls="ls -hAF --color=auto"
 alias ll="ls -l"
-alias lt="ll -t"
+alias lt="ll -rt"
 alias ..="cd ../"
 alias home="cd ~"
 alias ...="cd ../.."
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
+
+alias git='git '
+alias fstatus='status --ignore-submodules'
+
+alias bterm='bsub -Is -XF bash'
 
 alias getnx="echo \"export DISPLAY=$DISPLAY\" > ~/.nxdisplay"
 alias setnx="source ~/.nxdisplay"
@@ -50,6 +55,6 @@ PS1='\[\033[0;32m\]\u@\h \[\033[33m\]\w\[\033[0m\] '
 
 ### New screens only call .bashrc, so here's a fix:
 
-if [ $STY ]; then
-  source ~/.bash_profile
-fi
+#if [ $STY ]; then
+#  source ~/.bash_profile
+#fi
