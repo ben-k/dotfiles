@@ -7,7 +7,7 @@ umask 0022
 export CLICOLOR=1
 export LSCOLORS=Exfxcxdxbxegedabagacad
 
-alias ls="ls -hAFG"
+alias ls="ls -hAF --color=auto"
 alias ll="ls -l"
 alias lt="ll -rt"
 alias ..="cd ../"
