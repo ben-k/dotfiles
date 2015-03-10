@@ -7,6 +7,8 @@ set expandtab
 set softtabstop=2
 set autoindent
 
+" Read Makefrags as Makefiles
+au BufRead,BufNewFile Makefrag set filetype=make
 
 " When searching try to be smart about cases 
 set smartcase
