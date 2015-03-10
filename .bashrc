@@ -4,14 +4,22 @@ umask 0022
 
 ### ALIASES ###
 
+export CLICOLOR=1
+export LSCOLORS=Exfxcxdxbxegedabagacad
+
 alias ls="ls -hAFG"
 alias ll="ls -l"
-alias lt="ll -t"
+alias lt="ll -rt"
 alias ..="cd ../"
 alias home="cd ~"
 alias ...="cd ../.."
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
+
+alias git='git '
+alias fstatus='status --ignore-submodules'
+
+alias bterm='bsub -Is -XF bash'
 
 alias getnx="echo \"export DISPLAY=$DISPLAY\" > ~/.nxdisplay"
 alias setnx="source ~/.nxdisplay"
@@ -44,6 +52,10 @@ alias rc6="ssh bkeller@bwrcr720-6.eecs.berkeley.edu"
 
 alias 250="ssh cs250@icluster16.eecs.berkeley.edu"
 
+alias dev="ssh bkeller@bwrcdev-01.eecs.berkeley.edu"
+
+alias nv="ssh benk@sc-xterm-25"
+
 alias home="cd /tools/designs/Dcdg/users/bkeller"
 
 ### PS1 (Config for terminal prompt) ###
@@ -52,6 +64,6 @@ PS1='\[\033[0;32m\]\u@\h \[\033[33m\]\w\[\033[0m\] '
 
 ### New screens only call .bashrc, so here's a fix:
 
-if [ $STY ]; then
-  source ~/.bash_profile
-fi
+#if [ $STY ]; then
+#  source ~/.bash_profile
+#fi
