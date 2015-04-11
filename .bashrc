@@ -28,7 +28,7 @@ alias grep="grep --color"
 
 alias ssh="ssh -X"
 
-alias procs="ps -elf | grep benk"
+alias procs="ps -elf | grep bkeller"
 
 alias infinity="ssh bkeller@192.168.1.4"
 alias rdsl1="ssh bkeller@bwrcrdsl-1.eecs.berkeley.edu"
