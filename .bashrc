@@ -11,10 +11,10 @@ alias ls="ls -hAF --color=auto"
 alias ll="ls -l"
 alias lt="ll -rt"
 alias ..="cd ../"
-alias home="cd ~"
 alias ...="cd ../.."
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
+alias rl="readlink -f"
 
 alias git='git '
 alias fstatus='status --ignore-submodules'
@@ -27,6 +27,8 @@ alias setnx="source ~/.nxdisplay"
 alias grep="grep --color"
 
 alias ssh="ssh -X"
+
+alias procs="ps -elf | grep benk"
 
 alias infinity="ssh bkeller@192.168.1.4"
 alias rdsl1="ssh bkeller@bwrcrdsl-1.eecs.berkeley.edu"
