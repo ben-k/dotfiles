@@ -1,0 +1,28 @@
+[user]
+	name = Ben Keller
+	email = bkeller@eecs.berkeley.edu
+
+[credential]
+	helper = cache
+
+[diff]
+	tool = vimdiff
+
+[difftool]
+	prompt = false
+
+[alias]
+	d = difftool
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  fstatus = status --ignore-submodules
+
+[color]
+  branch = auto
+  diff = auto
+  log = auto
+  interactive = auto
+  status = auto
+  pager = true
+
+[push]
+	default = matching
