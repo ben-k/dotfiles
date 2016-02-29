@@ -16,19 +16,22 @@ alias ....="cd ../../../"
 alias .....="cd ../../../../"
 alias rl="readlink -f"
 
-alias git='git '
-alias fstatus='status --ignore-submodules'
-
 alias bterm='bsub -Is -XF bash'
 
 alias getnx="echo \"export DISPLAY=$DISPLAY\" > ~/.nxdisplay"
 alias setnx="source ~/.nxdisplay"
 
-alias grep="grep --color"
+alias grep="grep --color=auto"
 
 alias ssh="ssh -X"
 
 alias procs="ps -elf | grep bkeller"
+
+alias noemail="export LSB_JOB_REPORT_MAIL=n"
+alias yesemail="export LSB_JOB_REPORT_MAIL=y"
+export LSB_JOB_REPORT_MAIL=n
+
+alias rmcolor='sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"'
 
 alias infinity="ssh bkeller@192.168.1.4"
 alias rdsl1="ssh bkeller@bwrcrdsl-1.eecs.berkeley.edu"
@@ -54,9 +57,11 @@ alias 250="ssh cs250@icluster16.eecs.berkeley.edu"
 
 alias dev="ssh bkeller@bwrcdev-01.eecs.berkeley.edu"
 
-alias nv="ssh benk@sc-xterm-25"
-
 alias home="cd /tools/designs/Dcdg/users/bkeller"
+
+alias testing="ssh dp690-12.eecs.berkeley.edu"
+alias raven="cd /tools/designs/Dcdg/users/bkeller/raven"
+
 
 ### PS1 (Config for terminal prompt) ###
 

@@ -1,11 +1,17 @@
 " A tab is 2 spaces
 set tabstop=2
-"set number
 set smarttab
 set shiftwidth=2
 set expandtab
 set softtabstop=2
 set autoindent
+
+" Do not copy line numbers but show them
+" set nonu
+" set number
+
+" Enable filetype plugin
+filetype plugin on
 
 " Read Makefrags as Makefiles
 au BufRead,BufNewFile Makefrag set filetype=make
@@ -19,17 +25,20 @@ set hlsearch
 " Makes search act like search in modern browsers
 set incsearch
 
+" Show whitespace: tabs and trailing spaces
+set listchars=tab:→\ ,trail:·
+set list
+
 " Turn off vi compatability
 set nocompatible 
 
 " Turn on syntax highlighting
 syntax on
 
-" Turn on auto indentation
-set autoindent
-
 " Encoding
 set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=utf-8
 
 " Show number of lines of selection
 set showcmd
