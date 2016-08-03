@@ -26,8 +26,9 @@ set hlsearch
 set incsearch
 
 " Show whitespace: tabs and trailing spaces
-set listchars=tab:→\ ,trail:·
-set list
+" Doesn't work when the ST tools are sourced
+"set listchars=tab:→\ ,trail:·
+"set list
 
 " Turn off vi compatability
 set nocompatible 

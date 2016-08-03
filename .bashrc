@@ -1,3 +1,10 @@
+export BASHRC_SOURCED=1
+if [ -f ~/.bash_profile ]; then
+  if [ -z "$BASH_PROFILE_SOURCED" ]; then
+    source ~/.bash_profile
+  fi
+fi
+
 ### PERMISSIONS ###
 
 umask 0022
@@ -62,13 +69,12 @@ alias home="cd /tools/designs/Dcdg/users/bkeller"
 alias testing="ssh dp690-12.eecs.berkeley.edu"
 alias raven="cd /tools/designs/Dcdg/users/bkeller/raven"
 
+alias farm="ssh palmer-farm003.eecs.berkeley.edu -p 22003"
 
 ### PS1 (Config for terminal prompt) ###
 
 PS1='\[\033[0;32m\]\u@\h \[\033[33m\]\w\[\033[0m\] '
 
-### New screens only call .bashrc, so here's a fix:
+#export TERM=linux
+export LOCALE=en_US.UTF-8
 
-#if [ $STY ]; then
-#  source ~/.bash_profile
-#fi
