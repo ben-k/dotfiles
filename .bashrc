@@ -64,6 +64,8 @@ alias 250="ssh cs250@icluster16.eecs.berkeley.edu"
 
 alias dev="ssh bkeller@bwrcdev-01.eecs.berkeley.edu"
 
+alias sterm="srun -u bash -i"
+
 alias home="cd /tools/designs/Dcdg/users/bkeller"
 
 alias testing="ssh dp690-12.eecs.berkeley.edu"
