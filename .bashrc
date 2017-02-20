@@ -57,16 +57,5 @@ if [ -f ~/.bashrc_local ]; then
 fi
 
 
-# BWRC only
-alias bterm='bsub -Is -XF bash'
-alias noemail="export LSB_JOB_REPORT_MAIL=n"
-alias yesemail="export LSB_JOB_REPORT_MAIL=y"
-export LSB_JOB_REPORT_MAIL=n
-alias getnx="echo \"export DISPLAY=$DISPLAY\" > ~/.nxdisplay"
-alias setnx="source ~/.nxdisplay"
-alias home="cd /tools/designs/Dcdg/users/bkeller"
-alias testing="ssh dp690-12.eecs.berkeley.edu"
-alias raven="cd /tools/designs/Dcdg/users/bkeller/raven"
-
 # Farm only
 alias sterm="srun -u bash -i"
