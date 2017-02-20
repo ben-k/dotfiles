@@ -55,7 +55,3 @@ PS1='\[\033[0;32m\]\u@\h \[\033[33m\]\w\[\033[0m\] '
 if [ -f ~/.bashrc_local ]; then
   source ~/.bashrc_local
 fi
-
-
-# Farm only
-alias sterm="srun -u bash -i"
