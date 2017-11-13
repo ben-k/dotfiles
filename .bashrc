@@ -26,19 +26,6 @@ alias procs="ps -elf | grep bkeller"
 
 alias rmcolor='sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"'
 
-alias rdsl1="ssh bkeller@bwrcrdsl-1.eecs.berkeley.edu"
-alias rdsl2="ssh bkeller@bwrcrdsl-2.eecs.berkeley.edu"
-alias rdsl3="ssh bkeller@bwrcrdsl-3.eecs.berkeley.edu"
-alias rdsl5="ssh bkeller@bwrcrdsl-5.eecs.berkeley.edu"
-alias rdsl6="ssh bkeller@bwrcrdsl-6.eecs.berkeley.edu"
-
-alias a5="ssh bkeller@a5.millennium.berkeley.edu"
-alias a6="ssh bkeller@a6.millennium.berkeley.edu"
-alias a7="ssh bkeller@a7.millennium.berkeley.edu"
-alias a8="ssh bkeller@a8.millennium.berkeley.edu"
-
-alias farm="ssh palmer-farm003.eecs.berkeley.edu -p 22003"
-
 
 ### Misc ###
 
