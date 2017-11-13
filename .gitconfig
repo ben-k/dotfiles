@@ -25,7 +25,7 @@
   pager = true
 
 [push]
-	default = matching
+	default = upstream
 
 [core]
 	editor = vim
