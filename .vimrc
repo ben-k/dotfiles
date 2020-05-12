@@ -6,17 +6,58 @@ set expandtab
 set softtabstop=2
 set autoindent
 
+" If we use the default (tcsh), vimdiff sources the dotfiles for some reason
+set shell=/bin/sh
+
 " Do not copy line numbers but show them
 " set nonu
 " set number
+
+"********Vundle Setup********
+set nocompatible              " be iMproved, required
+filetype off                  " required
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'nfvs/vim-perforce'
+Plugin 'stephpy/vim-yaml'
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+"********End Vundle Setup********
 
 " Enable filetype plugin
 filetype plugin on
 filetype plugin indent on
 
-" Read Makefrags as Makefiles
+" Tell vim about some custom extensions
 au BufRead,BufNewFile Makefrag set filetype=make
-au BufRead,BufNewFile *.vx set filetype=verilog
+au BufRead,BufNewFile *.make set filetype=make
+au BufRead,BufNewFile *.mk set filetype=make
+au BufRead,BufNewFile Makeppfile set filetype=make
+au BufRead,BufNewFile *.medic set filetype=tcl
+" au BufRead,BufNewFile *.vx set filetype=verilog
+au BufRead,BufNewFile *.v.template set filetype=verilog
+au BufRead,BufNewFile *.sv set filetype=verilog
+au BufRead,BufNewFile *.vt set filetype=verilog
+au BufRead,BufNewFile *.vlib set filetype=verilog
+
+" Automatic folding for yaml files
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 " When searching try to be smart about cases 
 set smartcase
@@ -84,13 +125,23 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" Default to not read-only in vimdiff
+set noro
+
 " Keep command line history
 set history=1000
 
 " Mirror vim clipboard (eg. yank), with system clipboard
 set clipboard=unnamed
 
+vmap "+y :!xclip -f -sel clip
+map "+p :r!xclip -o -sel clip
+
 set formatoptions=tcq
 
 " Pathogen
 execute pathogen#infect()
+
+" vim-perforce settings
+let g:perforce_open_on_change = 1
+"let g:perforce_prompt_on_open = 0
