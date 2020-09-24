@@ -22,7 +22,7 @@ alias grep="grep --color=auto"
 
 alias ssh="ssh -X"
 
-alias procs="ps -elf | grep bkeller"
+alias procs="ps -elf -U $USER"
 
 alias rmcolor='sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"'
 
