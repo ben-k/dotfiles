@@ -20,6 +20,8 @@ alias rl="readlink -f"
 
 alias grep="grep --color=auto"
 
+alias cw='chmod +w '
+
 alias ssh="ssh -X"
 
 alias procs="ps -elf -U $USER"
@@ -30,6 +32,7 @@ alias rmcolor='sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g"'
 ### Misc ###
 
 export LOCALE=en_US.UTF-8
+export EDITOR=vim
 
 
 ### PS1 (Config for terminal prompt) ###
