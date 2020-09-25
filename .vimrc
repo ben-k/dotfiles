@@ -54,6 +54,7 @@ au BufRead,BufNewFile *.v.template set filetype=verilog
 au BufRead,BufNewFile *.sv set filetype=verilog
 au BufRead,BufNewFile *.vt set filetype=verilog
 au BufRead,BufNewFile *.vlib set filetype=verilog
+au BufRead,BufNewFile *.cir set filetype=spice
 
 " Automatic folding for yaml files
 au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent

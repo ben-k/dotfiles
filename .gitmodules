@@ -1,0 +1,12 @@
+[submodule ".tmux/plugins/tmux-continuum"]
+	path = .tmux/plugins/tmux-continuum
+	url = https://git::@github.com/tmux-plugins/tmux-continuum
+[submodule ".tmux/plugins/tmux-resurrect"]
+	path = .tmux/plugins/tmux-resurrect
+	url = https://git::@github.com/tmux-plugins/tmux-resurrect
+[submodule ".tmux/plugins/tmux-select-pane-no-wrap"]
+	path = .tmux/plugins/tmux-select-pane-no-wrap
+	url = https://git::@github.com/dalejung/tmux-select-pane-no-wrap
+[submodule ".tmux/plugins/tpm"]
+	path = .tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
