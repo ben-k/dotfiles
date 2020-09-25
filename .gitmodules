@@ -10,3 +10,15 @@
 [submodule ".tmux/plugins/tpm"]
 	path = .tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule ".vim/bundle/Vundle.vim"]
+	path = .vim/bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim.git
+[submodule ".vim/bundle/vim-json"]
+	path = .vim/bundle/vim-json
+	url = git@github.com:elzr/vim-json.git
+[submodule ".vim/bundle/vim-perforce"]
+	path = .vim/bundle/vim-perforce
+	url = https://github.com/nfvs/vim-perforce.git
+[submodule ".vim/bundle/vim-yaml"]
+	path = .vim/bundle/vim-yaml
+	url = https://github.com/stephpy/vim-yaml.git

@@ -49,7 +49,6 @@ au BufRead,BufNewFile *.make set filetype=make
 au BufRead,BufNewFile *.mk set filetype=make
 au BufRead,BufNewFile Makeppfile set filetype=make
 au BufRead,BufNewFile *.medic set filetype=tcl
-" au BufRead,BufNewFile *.vx set filetype=verilog
 au BufRead,BufNewFile *.v.template set filetype=verilog
 au BufRead,BufNewFile *.sv set filetype=verilog
 au BufRead,BufNewFile *.vt set filetype=verilog
