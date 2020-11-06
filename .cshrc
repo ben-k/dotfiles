@@ -82,10 +82,18 @@ endif
 #set prompt="%{\033[0;32m%}%n@%m %{\033[0;33m%}%~%{\033[0m%} "
 alias find_last_module 'echo $LOADEDMODULES | rev | cut -d":" -f 1 | rev | cut -d"/" -f 1 | sed s/remove-home-gnu//'
 alias precmd 'setenv last_module `find_last_module`'
-set prompt='(%$last_module) %{\033[0;32m%}%n@%m %{\033[0;33m%}%~%{\033[0m%} '
+set prompt='(%$last_module) %{\033[0;36m%}%n@%m %{\033[0;33m%}%~%{\033[0m%} '
 
 # Not really sure, but I had it from somewhere
 setenv LOCALE en_US.UTF-8
+setenv LANG en_US.UTF-8
+setenv LC_COLLATE en_US.UTF-8
+setenv LC_CTYPE en_US.UTF-8
+setenv LC_MESSAGES en_US.UTF-8
+setenv LC_MONETARY en_US.UTF-8
+setenv LC_NUMERIC en_US.UTF-8
+setenv LC_TIME en_US.UTF-8
+setenv LC_ALL en_US.UTF-8
 
 # iTerm2 shell integration, but not in vnc
 #if (! $?VNCDESKTOP) then
