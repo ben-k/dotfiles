@@ -52,6 +52,7 @@ au BufRead,BufNewFile *.medic set filetype=tcl
 au BufRead,BufNewFile *.v.template set filetype=verilog
 au BufRead,BufNewFile *.sv set filetype=verilog
 au BufRead,BufNewFile *.vt set filetype=verilog
+au BufRead,BufNewFile *.vh set filetype=verilog
 au BufRead,BufNewFile *.vlib set filetype=verilog
 au BufRead,BufNewFile *.cir set filetype=spice
 au BufRead,BufNewFile Jenkinsfile set filetype=groovy

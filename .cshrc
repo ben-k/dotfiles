@@ -61,7 +61,7 @@ alias ..... 'cd ../../../../'
 alias rl 'readlink -f'
 alias grep 'grep --color=auto'
 alias cw 'chmod +w '
-alias procs "ps -elf -U $USER"
+alias procs "ps -lf -U $USER"
 
 alias jpn 'jupyter notebook --ip=0.0.0.0 --no-browser'
 
