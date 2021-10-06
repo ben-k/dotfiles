@@ -16,7 +16,7 @@ alias ...="cd ../.."
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
 
-alias rl="readlink -f"
+alias rl="readlink -e"
 
 alias grep="grep --color=auto"
 

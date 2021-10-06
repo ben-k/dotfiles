@@ -1,3 +1,4 @@
 log = changes -l -t -m10 ...
 blame = annotate -u
 mv $(a) $(b) = integ $(a) $(b) && delete $(a)
+grep = grep -s -n -e

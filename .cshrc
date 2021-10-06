@@ -58,7 +58,7 @@ alias ... 'cd ../..'
 alias .... 'cd ../../../'
 alias ..... 'cd ../../../../'
 
-alias rl 'readlink -f'
+alias rl 'readlink -e'
 alias grep 'grep --color=auto'
 alias cw 'chmod +w '
 alias procs "ps -lf -U $USER"
