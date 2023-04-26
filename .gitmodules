@@ -22,3 +22,9 @@
 [submodule ".vim/bundle/vim-yaml"]
 	path = .vim/bundle/vim-yaml
 	url = https://github.com/stephpy/vim-yaml.git
+[submodule ".vim/bundle/hl_matchit.vim"]
+	path = .vim/bundle/hl_matchit.vim
+	url = git@github.com:vimtaku/hl_matchit.vim.git
+[submodule ".vim/bundle/verilog_systemverilog.vim"]
+	path = .vim/bundle/verilog_systemverilog.vim
+	url = https://github.com/vhda/verilog_systemverilog.vim.git

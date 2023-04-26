@@ -66,6 +66,9 @@ alias procs "ps -lf -U $USER"
 alias jpn 'jupyter notebook --ip=0.0.0.0 --no-browser'
 
 alias pim 'p4 edit \!* && vim \!*'
+alias plog 'p4 fulllog | less'
+alias pmylog 'p4 mylog | less'
+alias plinteg 'p4 linteg \!:1 \!:2 && cp \!:1 \!:2'
 
 # Fix UTF-8 issue with tmux
 alias tmux 'tmux -u'

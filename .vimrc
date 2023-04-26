@@ -25,6 +25,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'nfvs/vim-perforce'
 Plugin 'stephpy/vim-yaml'
+Plugin 'vhda/verilog_systemverilog.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,6 +46,7 @@ filetype plugin indent on
 
 " Tell vim about some custom extensions
 au BufRead,BufNewFile Makefrag set filetype=make
+au BufRead,BufNewFile Makefrag-* set filetype=make
 au BufRead,BufNewFile *.make set filetype=make
 au BufRead,BufNewFile *.mk set filetype=make
 au BufRead,BufNewFile Makeppfile set filetype=make
@@ -54,6 +56,7 @@ au BufRead,BufNewFile *.sv set filetype=verilog
 au BufRead,BufNewFile *.vt set filetype=verilog
 au BufRead,BufNewFile *.vh set filetype=verilog
 au BufRead,BufNewFile *.vlib set filetype=verilog
+au BufRead,BufNewFile *.gv set filetype=verilog
 au BufRead,BufNewFile *.cir set filetype=spice
 au BufRead,BufNewFile Jenkinsfile set filetype=groovy
 
@@ -140,6 +143,10 @@ vmap "+y :!xclip -f -sel clip
 map "+p :r!xclip -o -sel clip
 
 set formatoptions=tcq
+
+" Some niceties for verilog
+runtime macros/matchit.vim
+let g:hl_matchit_enable_on_vim_startup = 1
 
 " Pathogen
 execute pathogen#infect()

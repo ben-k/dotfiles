@@ -1,5 +1,6 @@
 " Vim filetype plugin for using emacs verilog-mode
-" Last Change: 2007 August 29
+" Last Change: 2016 May 30
+" Last Update: Terrence Sun <sunyanteng@gmail.com>
 " Maintainer:  Seong Kang <seongk@wwcoms.com>
 " License:     This file is placed in the public domain.
 
@@ -44,16 +45,23 @@ function s:Add()
       let s:save_tabstop = &tabstop
       let &tabstop=8
    endif
+   " mark current line
+   exec 'normal! ma'
    " a tmp file is need 'cause emacs doesn't support the stdin to stdout flow
    " maybe add /tmp to the temporary filename
-   w! %.emacsautotmp
-   !emacs -batch -l ~/elisp/verilog-mode.el %.emacsautotmp -f verilog-batch-auto
-   %!cat %.emacsautotmp 
-   if &expandtab
-      retab
-      let &tabstop=s:save_tabstop
+   keepalt w! %.emacsautotmp
+   let s:msg = system("emacs -batch -l ~/elisp/verilog-mode.el ".expand("%").".emacsautotmp -f verilog-batch-auto")
+   if ! v:shell_error
+      %!cat %.emacsautotmp 
+      if &expandtab
+         retab
+         let &tabstop=s:save_tabstop
+      endif
    endif
-   !rm %.emacsautotmp
+   silent !rm %.emacsautotmp
+   echo s:msg
+   "move to last line
+   :'a
 endfunction
 
 " Delete function
@@ -64,7 +72,7 @@ endfunction
 function s:Delete()
    " a tmp file is need 'cause emacs doesn't support the stdin to stdout flow
    " maybe add /tmp to the temporary filename
-   w! %.emacsautotmp
+   keepalt w! %.emacsautotmp
    !emacs -batch -l ~/elisp/verilog-mode.el %.emacsautotmp -f verilog-batch-delete-auto
    %!cat %.emacsautotmp 
    !rm %.emacsautotmp

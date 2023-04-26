@@ -32,3 +32,5 @@
 
 [include]
   path = .gitconfig_local
+[http]
+	sslVerify = false
