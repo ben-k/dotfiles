@@ -25,7 +25,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'nfvs/vim-perforce'
 Plugin 'stephpy/vim-yaml'
-" Plugin 'vhda/verilog_systemverilog.vim' " This breaks verilog_emacsauto.vim unfortunately
+Plugin 'vhda/verilog_systemverilog.vim' " This breaks verilog_emacsauto.vim unfortunately
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
