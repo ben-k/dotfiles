@@ -5,6 +5,8 @@ umask 022
 setenv EDITOR vim
 
 # P4
+setenv P4CONFIG .p4config
+setenv P4IGNORE .p4ignore
 setenv P4EDITOR vim
 setenv P4DIFF vimdiff
 setenv P4ALIASES ~/.p4aliases
@@ -70,8 +72,8 @@ alias plog 'p4 fulllog | less'
 alias pmylog 'p4 mylog | less'
 alias plinteg 'p4 linteg \!:1 \!:2 && cp \!:1 \!:2'
 
-# Fix UTF-8 issue with tmux
-alias tmux 'tmux -u'
+# Fix UTF-8 issue and 256 colors issue with tmux
+alias tmux 'tmux -u -2'
 
 # Why is this default
 if ($?SSH_ASKPASS) then       
