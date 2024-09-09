@@ -36,3 +36,5 @@
 	sslVerify = false
 [fetch]
 	prune = true
+[init]
+	defaultBranch = main
